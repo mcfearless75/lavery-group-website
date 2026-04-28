@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:www.laverygroup.com)",
-      "WebFetch(domain:static.wixstatic.com)"
+      "WebFetch(domain:static.wixstatic.com)",
+      "Bash(ls *.png *.jpg *.jpeg *.svg *.webp)",
+      "Bash(dir /b *.png *.jpg *.jpeg *.svg *.webp)"
     ]
   }
 }
