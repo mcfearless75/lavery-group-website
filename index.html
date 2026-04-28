@@ -19,13 +19,23 @@
   {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
+    "@id": "https://www.laverygroup.com/#organization",
     "name": "The Lavery Group",
     "description": "Trusted letting agents and property management specialists in East London.",
     "url": "https://www.laverygroup.com",
     "email": "matthew@laverygroup.com",
     "telephone": "+447905210134",
-    "areaServed": "East London",
-    "openingHours": "Mo-Fr 09:00-17:00"
+    "areaServed": {
+      "@type": "Place",
+      "name": "East London"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "London",
+      "addressCountry": "GB"
+    },
+    "openingHours": ["Mo-Fr 09:00-17:00"],
+    "sameAs": ["https://www.laverygroup.com"]
   }
   </script>
 
@@ -197,16 +207,16 @@
           <div class="stat__label">Client Focused</div>
         </div>
         <div class="text-center reveal reveal-delay-1">
-          <div class="stat__number" data-target="30" data-suffix=" Min">0 Min</div>
+          <div class="stat__number" data-target="30" data-suffix="m">0m</div>
           <div class="stat__label">Free Consultation</div>
         </div>
         <div class="text-center reveal reveal-delay-2">
-          <div class="stat__number" data-target="24" data-suffix="/7">0/7</div>
-          <div class="stat__label">Accessible Team</div>
+          <div class="stat__number" data-target="24" data-suffix="h">0h</div>
+          <div class="stat__label">Response Time</div>
         </div>
         <div class="text-center reveal reveal-delay-3">
-          <div class="stat__number" data-target="0" data-suffix=" Stress">0 Stress</div>
-          <div class="stat__label">Property Experience</div>
+          <div class="stat__number" data-target="1">0</div>
+          <div class="stat__label">Dedicated Contact</div>
         </div>
       </div>
     </div>

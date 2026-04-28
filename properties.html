@@ -8,28 +8,50 @@
   <meta name="theme-color" content="#0D1B2A">
   <link rel="canonical" href="https://www.laverygroup.com/properties">
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="Properties — The Lavery Group | East London Rentals">
+  <meta property="og:description" content="Browse available rental properties in East London. Flats for rent in Islington and surrounding areas.">
+  <meta property="og:image" content="https://static.wixstatic.com/media/83a797_4eed1a0e5a3e4dfbbe70053332fce8b9~mv2.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.laverygroup.com/properties">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ItemList",
     "name": "Available Rental Properties — The Lavery Group",
     "description": "Rental properties available in East London managed by The Lavery Group",
+    "url": "https://www.laverygroup.com/properties",
     "itemListElement": [
       {
-        "@type": "Apartment",
-        "name": "Cozy Minimalist Apartment",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Joseph Trotter Close, Myddelton Street",
-          "addressLocality": "London",
-          "addressCountry": "GB"
-        },
-        "numberOfRooms": 2,
-        "offers": {
-          "@type": "Offer",
-          "price": "1000",
-          "priceCurrency": "GBP",
-          "priceSpecification": { "@type": "UnitPriceSpecification", "billingDuration": "P1M" }
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Apartment",
+          "@id": "https://www.laverygroup.com/properties/cozy-minimalist-apartment",
+          "name": "Cozy Minimalist Apartment",
+          "url": "https://www.laverygroup.com/properties/cozy-minimalist-apartment",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Joseph Trotter Close, Myddelton Street",
+            "addressLocality": "London",
+            "addressCountry": "GB"
+          },
+          "numberOfBedrooms": 2,
+          "numberOfBathroomsTotal": 1,
+          "offers": {
+            "@type": "Offer",
+            "price": "1000",
+            "priceCurrency": "GBP",
+            "availability": "https://schema.org/InStock",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "1000",
+              "priceCurrency": "GBP",
+              "billingDuration": "P1M",
+              "unitCode": "MON"
+            }
+          }
         }
       }
     ]

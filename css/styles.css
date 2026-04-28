@@ -127,6 +127,8 @@ input, textarea, select { font-family: inherit; }
   display: flex;
   align-items: center;
   gap: 2rem;
+  flex: 1;
+  justify-content: center;
 }
 .nav__link {
   font-size: 0.75rem;
