@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties — The Lavery Group | East London Rentals</title>
+  <meta name="description" content="Browse available rental properties in East London with The Lavery Group. Flats and houses for rent in Islington and surrounding areas.">
+  <meta name="theme-color" content="#0D1B2A">
+  <link rel="canonical" href="https://www.laverygroup.com/properties">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Available Rental Properties — The Lavery Group",
+    "description": "Rental properties available in East London managed by The Lavery Group",
+    "itemListElement": [
+      {
+        "@type": "Apartment",
+        "name": "Cozy Minimalist Apartment",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Joseph Trotter Close, Myddelton Street",
+          "addressLocality": "London",
+          "addressCountry": "GB"
+        },
+        "numberOfRooms": 2,
+        "offers": {
+          "@type": "Offer",
+          "price": "1000",
+          "priceCurrency": "GBP",
+          "priceSpecification": { "@type": "UnitPriceSpecification", "billingDuration": "P1M" }
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ====== NAV ====== -->
+  <nav class="nav scrolled" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="The Lavery Group — Home">
+          <span class="nav__logo-name">The Lavery Group</span>
+          <span class="nav__logo-tag">Property Management</span>
+        </a>
+        <ul class="nav__links" role="list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="properties.html" class="nav__link" aria-current="page">Properties</a></li>
+          <li><a href="contact.html" class="nav__link">Tenants</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <a href="contact.html#booking" class="nav__cta">Book Consultation</a>
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html" class="nav__mobile-link">Home</a>
+    <a href="properties.html" class="nav__mobile-link">Properties</a>
+    <a href="contact.html" class="nav__mobile-link">Tenants</a>
+    <a href="contact.html" class="nav__mobile-link">Contact</a>
+    <a href="contact.html#booking" class="nav__mobile-link" style="color:var(--gold)">Book Consultation</a>
+  </div>
+
+  <!-- ====== PAGE HERO ====== -->
+  <header class="page-hero">
+    <div class="container">
+      <p class="page-hero__eyebrow">Available Now</p>
+      <h1 class="page-hero__title">Property Listings</h1>
+      <p class="page-hero__sub">Browse available rentals in East London and surrounding areas. Every property is personally vetted by our team.</p>
+    </div>
+  </header>
+
+  <!-- ====== MAIN CONTENT ====== -->
+  <main class="section section--cream">
+    <div class="container">
+
+      <!-- Filter Bar -->
+      <div class="filter-bar reveal" role="search" aria-label="Filter properties">
+        <div class="filter-group">
+          <label for="filter-status">Status</label>
+          <select id="filter-status" data-filter="status" aria-label="Filter by status">
+            <option value="all">All</option>
+            <option value="rent">For Rent</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filter-beds">Bedrooms</label>
+          <select id="filter-beds" data-filter="beds" aria-label="Filter by bedrooms">
+            <option value="any">Any</option>
+            <option value="1">1 Bedroom</option>
+            <option value="2">2 Bedrooms</option>
+            <option value="3">3+ Bedrooms</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filter-baths">Bathrooms</label>
+          <select id="filter-baths" data-filter="baths" aria-label="Filter by bathrooms">
+            <option value="any">Any</option>
+            <option value="1">1 Bathroom</option>
+            <option value="2">2 Bathrooms</option>
+          </select>
+        </div>
+        <div class="filter-group" style="flex:0; min-width:auto;">
+          <label>&nbsp;</label>
+          <button class="btn btn--navy" onclick="document.querySelectorAll('.filter-group select').forEach(s=>s.value=s.options[0].value); document.querySelectorAll('.property-card[data-beds]').forEach(c=>c.style.display='');" style="height:42px; padding:0 1.25rem;">
+            Reset
+          </button>
+        </div>
+      </div>
+
+      <!-- Properties Grid -->
+      <div class="properties-grid" role="list" aria-label="Property listings">
+
+        <!-- Property 1 -->
+        <article
+          class="property-card reveal"
+          data-beds="2"
+          data-baths="1"
+          data-status="rent"
+          role="listitem"
+        >
+          <a href="property-detail.html" aria-label="View Cozy Minimalist Apartment — £1,000 per month">
+            <div class="property-card__img">
+              <img
+                src="https://static.wixstatic.com/media/83a797_4eed1a0e5a3e4dfbbe70053332fce8b9~mv2.jpg"
+                alt="Cozy minimalist apartment living area, Myddelton Street"
+                loading="lazy"
+                width="680"
+                height="425"
+              >
+              <span class="property-card__badge">For Rent</span>
+            </div>
+            <div class="property-card__body">
+              <div class="property-card__price">£1,000 <span>/ month</span></div>
+              <div class="property-card__address">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                Joseph Trotter Close, Myddelton Street, London
+              </div>
+              <div class="property-card__features">
+                <div class="property-card__feat">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75"/></svg>
+                  2 Beds
+                </div>
+                <div class="property-card__feat">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+                  1 Bath
+                </div>
+                <div class="property-card__feat">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  Flat
+                </div>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Property 2 -->
+        <article
+          class="property-card reveal reveal-delay-2"
+          data-beds="2"
+          data-baths="1"
+          data-status="rent"
+          role="listitem"
+        >
+          <a href="contact.html#viewing" aria-label="Enquire about Myddelton Street property">
+            <div class="property-card__img">
+              <img
+                src="https://static.wixstatic.com/media/83a797_4f2507a23af3403082304eda7502f715~mv2.jpg"
+                alt="Myddelton Street London property"
+                loading="lazy"
+                width="680"
+                height="425"
+              >
+              <span class="property-card__badge">For Rent</span>
+            </div>
+            <div class="property-card__body">
+              <div class="property-card__price" style="font-size:1.2rem; color:var(--slate)">Price on Application</div>
+              <div class="property-card__address">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                Myddelton Street, London
+              </div>
+              <div class="property-card__features">
+                <div class="property-card__feat">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75"/></svg>
+                  2 Beds
+                </div>
+                <div class="property-card__feat">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+                  1 Bath
+                </div>
+                <div class="property-card__feat">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819"/></svg>
+                  Enquire
+                </div>
+              </div>
+            </div>
+          </a>
+        </article>
+
+      </div><!-- /properties-grid -->
+
+      <!-- Empty state (hidden by default) -->
+      <div id="no-results" style="display:none; text-align:center; padding:4rem 0;">
+        <p style="font-size:1.1rem; color:var(--text-muted);">No properties match your current filters.</p>
+        <p style="font-size:0.9rem; color:var(--slate-light); margin-top:0.5rem;">Try adjusting your search or <a href="contact.html" style="color:var(--gold-dark); text-decoration:underline;">contact us</a> — we may have unlisted properties.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ====== LANDLORD CTA ====== -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="about-split" style="gap:clamp(2rem,5vw,5rem);">
+        <div class="reveal reveal--left">
+          <p class="section__eyebrow">For Landlords</p>
+          <h2 class="section__title" style="color:var(--white);">Have a property to let?</h2>
+          <p class="section__sub" style="max-width:480px;">We manage the entire process from listing to tenancy — finding quality tenants, handling compliance, and protecting your investment. Let's talk.</p>
+          <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:2rem;">
+            <a href="contact.html#booking" class="btn btn--gold">Book Free Consultation</a>
+            <a href="contact.html" class="btn btn--outline">Get in Touch</a>
+          </div>
+        </div>
+        <div class="reveal reveal--right">
+          <div class="about-img" style="border-radius:var(--radius-lg); overflow:hidden; aspect-ratio:16/10;">
+            <img
+              src="https://static.wixstatic.com/media/83a797_793c886537094c18901d7546e4f46a72~mv2.jpg"
+              alt="Property managed by The Lavery Group"
+              loading="lazy"
+              width="600"
+              height="375"
+              style="width:100%; height:100%; object-fit:cover;"
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">The Lavery Group</div>
+          <div class="footer__brand-tag">Property Management Specialists</div>
+          <p class="footer__desc">Trusted letting agents putting people first in East London and the surrounding areas.</p>
+          <a href="mailto:matthew@laverygroup.com" class="footer__contact-link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+            matthew@laverygroup.com
+          </a>
+          <a href="tel:+447905210134" class="footer__contact-link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+            +44 7905 210134
+          </a>
+        </div>
+        <div>
+          <h3 class="footer__heading">Navigation</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="properties.html" class="footer__link">Properties</a></li>
+            <li><a href="contact.html" class="footer__link">Tenants</a></li>
+            <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="index.html#services" class="footer__link">Tenant Sourcing</a></li>
+            <li><a href="index.html#services" class="footer__link">Full Management</a></li>
+            <li><a href="index.html#services" class="footer__link">Rent Collection</a></li>
+            <li><a href="contact.html#booking" class="footer__link">Free Consultation</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 The Lavery Group. All rights reserved.</p>
+        <nav class="footer__legal" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
