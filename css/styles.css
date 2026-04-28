@@ -118,6 +118,7 @@ input, textarea, select { font-family: inherit; }
   height: 46px;
   width: auto;
   display: block;
+  filter: brightness(0) invert(1);
 }
 .nav__links {
   position: absolute;
