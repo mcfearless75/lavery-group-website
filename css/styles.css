@@ -26,7 +26,7 @@
   --font-heading: 'Cinzel', Georgia, serif;
   --font-body:    'Josefin Sans', system-ui, sans-serif;
 
-  --nav-h: 80px;
+  --nav-h: 100px;
   --section-gap: clamp(4rem, 8vw, 8rem);
   --container: 1200px;
   --radius-sm: 4px;
@@ -115,7 +115,7 @@ input, textarea, select { font-family: inherit; }
   z-index: 1;
 }
 .nav__logo img {
-  height: 46px;
+  height: 80px;
   width: auto;
   display: block;
   filter: brightness(0) invert(1);
@@ -1391,7 +1391,7 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
-  :root { --nav-h: 68px; }
+  :root { --nav-h: 84px; }
   .nav__inner { grid-template-columns: 1fr auto; }
   .nav__links { display: none; }
   .nav__cta { display: none; }
